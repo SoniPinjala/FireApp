@@ -35,7 +35,7 @@ public class feedback_activity extends AppCompatActivity implements View.OnClick
     {
         sendMail();
     }
-
+//
     private void sendMail() {
         String[] recipients = {mails};
 
