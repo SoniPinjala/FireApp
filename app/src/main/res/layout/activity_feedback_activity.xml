@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback_activity"
+    android:orientation="vertical"
+    android:background="#0f3b52">
+
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Subject:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/subject_id" />
+
+    <EditText
+        android:id="@+id/edit_text_subject"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="textEmailSubject"
+        android:layout_below="@+id/subject_id"/>
+
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:id="@+id/message_id"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/edit_text_subject"/>
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/message_id"
+        android:lines="10" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_text_message"
+        android:text="Send"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_round"
+        android:textAllCaps="false"
+        android:textColor="#E91E63"
+        android:layout_marginTop="100dp"
+        android:id="@+id/sendmail_id"/>
+
+</RelativeLayout>
